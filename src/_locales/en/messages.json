@@ -1,0 +1,14 @@
+{
+  "appName": {
+    "message": "New window without toolbar",
+    "description": "The name of the extension."
+  },
+  "appDescription": {
+    "message": "Open current page in new window without toolbar.",
+    "description": "The description of the extension."
+  },
+  "btnTooltip": {
+    "message": "New window without toolbar",
+    "description": "Tooltip for the button."
+  }
+}
