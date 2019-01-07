@@ -24,5 +24,20 @@
       "48": "icons/icon48.png",
       "128": "icons/icon128.png"
     }
+  },
+  "overrides": {
+    "firefox": {
+      "applications": {
+        "gecko": {
+          "id": "new-window-without-toolbar@tkrkt.com"
+        }
+      },
+      "permissions": [
+        "tabs",
+        "contextMenus",
+        "contextualIdentities",
+        "cookies"
+      ]
+    }
   }
 }

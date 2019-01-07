@@ -18,21 +18,10 @@ var generic = JSON.parse(fs.readFileSync(`./config/${environment}.json`))
 var specific = JSON.parse(fs.readFileSync(`./config/${target}.json`))
 var context = Object.assign({}, generic, specific)
 
-var manifestTemplate = JSON.parse(fs.readFileSync(`./manifest.json`))
-var manifestOptions = {
-  firefox: {
-    "applications": {
-      "gecko": {
-        "id": "new-window-without-toolbar@tkrkt.com"
-      }
-    }
-  }
-}
-var manifest = Object.assign(
-    {},
-    manifestTemplate,
-    target === 'firefox' ? manifestOptions.firefox : {}
-)
+var manifest = JSON.parse(fs.readFileSync(`./manifest.json`))
+
+Object.assign(manifest, (manifest['overrides'] || {})[target] || {});
+delete manifest['overrides'];
 
 function resolve(dir) {
   return path.join(__dirname, '..', dir)
