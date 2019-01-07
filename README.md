@@ -10,3 +10,13 @@ Open current page in new window without toolbar.
 <img src="screenshot3.png" width="500">
 
 This WebExtension uses [EmailThis/extension-boilerplate (MIT Licence)](https://github.com/EmailThis/extension-boilerplate).
+
+
+## How to build
+
+```
+yarn install
+yarn run build
+```
+
+then exntension package is created in build directory.
