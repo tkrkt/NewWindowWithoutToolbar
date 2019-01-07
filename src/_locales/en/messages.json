@@ -7,8 +7,8 @@
     "message": "Open current page in new window without toolbar.",
     "description": "The description of the extension."
   },
-  "btnTooltip": {
+  "contextMenuText": {
     "message": "New window without toolbar",
-    "description": "Tooltip for the button."
+    "description": "The text of the context menu."
   }
 }

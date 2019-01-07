@@ -10,7 +10,7 @@ const createWindow = (url) => {
 ext.contextMenus.removeAll()
 ext.contextMenus.create({
   id: 'menu',
-  title: 'New window without toolbar'
+  title: ext.i18n.getMessage('contextMenuText')
 })
 
 ext.contextMenus.onClicked.addListener((info) => createWindow(info.pageUrl))
