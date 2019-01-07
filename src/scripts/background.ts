@@ -1,10 +1,14 @@
 import ext from './utils/ext'
 
-const createWindow = (url) => {
-  ext.windows.create({
-    url,
+const createWindow = (tab) => {
+  const args: any = {
+    url: tab.url,
     type: (ext.windows as any).WindowType.POPUP
-  })
+  }
+  if (tab.cookieStoreId) {
+    args.cookieStoreId = tab.cookieStoreId
+  }
+  ext.windows.create(args)
 }
 
 ext.contextMenus.removeAll()
@@ -13,5 +17,5 @@ ext.contextMenus.create({
   title: ext.i18n.getMessage('contextMenuText')
 })
 
-ext.contextMenus.onClicked.addListener((info) => createWindow(info.pageUrl))
-ext.browserAction.onClicked.addListener((tab) => createWindow(tab.url))
+ext.contextMenus.onClicked.addListener((_, tab) => tab && createWindow(tab))
+ext.browserAction.onClicked.addListener((tab) => createWindow(tab))
