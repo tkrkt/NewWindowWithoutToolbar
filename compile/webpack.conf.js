@@ -37,7 +37,8 @@ function copy(context, from, to) {
 
 var webpackConfig = {
   entry: {
-    background: './src/scripts/background.ts'
+    background: './src/scripts/background.ts',
+    options: './src/scripts/options.ts'
   },
   output: {
     path: resolve(`build/${target}`),

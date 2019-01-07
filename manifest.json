@@ -16,7 +16,8 @@
   },
   "permissions": [
     "tabs",
-    "contextMenus"
+    "contextMenus",
+    "storage"
   ],
   "browser_action": {
     "default_icon": {
@@ -24,6 +25,10 @@
       "48": "icons/icon48.png",
       "128": "icons/icon128.png"
     }
+  },
+  "options_ui": {
+    "chrome_style": true,
+    "page": "options.html"
   },
   "overrides": {
     "firefox": {
@@ -36,8 +41,13 @@
         "tabs",
         "contextMenus",
         "contextualIdentities",
-        "cookies"
-      ]
+        "cookies",
+        "storage"
+      ],
+      "options_ui": {
+        "browser_style": true,
+        "page": "options.html"
+      }
     }
   }
 }
