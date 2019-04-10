@@ -49,5 +49,14 @@
         "page": "options.html"
       }
     }
+  },
+  "commands": {
+    "open-new-window": {
+      "suggested_key": {
+        "default": "Alt+Shift+N",
+        "mac": "Alt+Shift+N"
+      },
+      "description": "__MSG_openNewWindowCommand__"
+    }
   }
 }

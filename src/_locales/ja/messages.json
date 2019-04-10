@@ -4,15 +4,15 @@
     "description": "The name of the extension."
   },
   "appDescription": {
-    "message": "Open current page in new window without toolbar.",
+    "message": "現在のページをツールバーなしで開き直します。",
     "description": "The description of the extension."
   },
   "contextMenuText": {
-    "message": "New window without toolbar",
+    "message": "このページをツールバーなしで開く",
     "description": "The text of the context menu."
   },
   "openNewWindowCommand": {
-    "message": "Open current page in new window without toolbar",
+    "message": "このページをツールバーなしで開く",
     "description": "The text of the shortcut command."
   }
 }

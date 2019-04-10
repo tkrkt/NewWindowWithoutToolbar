@@ -35,3 +35,21 @@ ext.browserAction.onClicked.addListener((tab) => tab.url && createWindow({
   url: tab.url,
   cookieStoreId: (tab as any).cookieStoreId
 }))
+
+ext.commands.onCommand.addListener((command) => {
+  if (command === 'open-new-window') {
+    ext.tabs.query({
+      highlighted: true,
+      currentWindow: true
+    }, (tabs) => {
+      const tab = tabs[0]
+      if (tab && tab.url) {
+        createWindow({
+          tabId: tab.id,
+          url: tab.url,
+          cookieStoreId: (tab as any).cookieStoreId
+        })
+      }
+    })
+  }
+})
