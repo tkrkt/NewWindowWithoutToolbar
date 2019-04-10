@@ -3,7 +3,7 @@ import storage from './utils/storage'
 export const load = (): Promise<{ closeOriginalPage: boolean, useContextMenu: boolean }> => {
   return new Promise((resolve) => {
     storage.get('options', (result) => {
-      resolve(result.options as any || {
+      resolve(result.options || {
         closeOriginalPage: false,
         useContextMenu: true
       })
