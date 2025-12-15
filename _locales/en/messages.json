@@ -1,0 +1,34 @@
+{
+  "appName": {
+    "message": "New Window Without Toolbar",
+    "description": "The name of the extension."
+  },
+  "appDescription": {
+    "message": "Open the current page in a new window without the toolbar.",
+    "description": "The description of the extension."
+  },
+  "contextMenuText": {
+    "message": "Open in new window without toolbar",
+    "description": "The text of the context menu."
+  },
+  "openNewWindowCommand": {
+    "message": "Open current page in new window without toolbar",
+    "description": "The text of the shortcut command."
+  },
+  "optionsTitle": {
+    "message": "Settings",
+    "description": "The title of the options page."
+  },
+  "closeOriginalPageLabel": {
+    "message": "Close the current page when opening the window",
+    "description": "Label for close original page option."
+  },
+  "useContextMenuLabel": {
+    "message": "Use context menu",
+    "description": "Label for use context menu option."
+  },
+  "settingsSaved": {
+    "message": "Settings saved!",
+    "description": "Message shown when settings are saved."
+  }
+}

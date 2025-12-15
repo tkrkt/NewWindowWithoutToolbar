@@ -1,7 +1,0 @@
-{
-  "extends": ["tslint-config-standard", "tslint-react"],
-  "rules": {
-    "jsx-no-multiline-js": false,
-    "no-floating-promises": false
-  }
-}

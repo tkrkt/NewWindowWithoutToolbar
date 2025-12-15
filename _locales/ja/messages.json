@@ -1,0 +1,34 @@
+{
+  "appName": {
+    "message": "New Window Without Toolbar",
+    "description": "The name of the extension."
+  },
+  "appDescription": {
+    "message": "現在のページをツールバーなしで開き直します。",
+    "description": "The description of the extension."
+  },
+  "contextMenuText": {
+    "message": "このページをツールバーなしで開く",
+    "description": "The text of the context menu."
+  },
+  "openNewWindowCommand": {
+    "message": "このページをツールバーなしで開く",
+    "description": "The text of the shortcut command."
+  },
+  "optionsTitle": {
+    "message": "設定",
+    "description": "The title of the options page."
+  },
+  "closeOriginalPageLabel": {
+    "message": "ウィンドウを開く際に現在のページを閉じる",
+    "description": "Label for close original page option."
+  },
+  "useContextMenuLabel": {
+    "message": "コンテキストメニューを使用する",
+    "description": "Label for use context menu option."
+  },
+  "settingsSaved": {
+    "message": "設定を保存しました!",
+    "description": "Message shown when settings are saved."
+  }
+}

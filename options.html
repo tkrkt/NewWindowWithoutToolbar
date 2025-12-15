@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Options & Settings</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Oxygen, Ubuntu, Cantarell, sans-serif;
+        padding: 20px;
+        max-width: 500px;
+        margin: 0 auto;
+      }
+      label {
+        display: block;
+        margin: 15px 0;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      input[type="checkbox"] {
+        margin-right: 8px;
+        cursor: pointer;
+      }
+      .saved-message {
+        color: #0f9d58;
+        margin-top: 20px;
+        display: none;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 data-i18n="optionsTitle">Settings</h2>
+
+    <label>
+      <input type="checkbox" id="close-original-page" />
+      <span data-i18n="closeOriginalPageLabel">Close the current page when opening the window</span>
+    </label>
+
+    <label>
+      <input type="checkbox" id="use-context-menu" />
+      <span data-i18n="useContextMenuLabel">Use context menu</span>
+    </label>
+
+    <div class="saved-message" id="saved-message" data-i18n="settingsSaved">Settings saved!</div>
+
+    <script src="options.js"></script>
+  </body>
+</html>

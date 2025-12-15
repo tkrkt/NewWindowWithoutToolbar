@@ -2,21 +2,38 @@
 
 Open current page in new window without toolbar.
 
-* [New window without toolbar - Chrome Web Store](https://chrome.google.com/webstore/detail/new-window-without-toolba/epcobhhlenfbjlmooebphgjcgdmbjgnb)
-* [New window without toolbar - Firefox Add-ons](https://addons.mozilla.org/ja/firefox/addon/new-window-without-toolbar/)
+- [New window without toolbar - Chrome Web Store](https://chrome.google.com/webstore/detail/new-window-without-toolba/epcobhhlenfbjlmooebphgjcgdmbjgnb)
 
-<img src="screenshot.png" width="500">
-<img src="screenshot2.png" width="500">
-<img src="screenshot3.png" width="500">
+## Features
 
-This WebExtension uses [EmailThis/extension-boilerplate (MIT Licence)](https://github.com/EmailThis/extension-boilerplate).
+- Open current page in a popup window (without address bar and toolbar)
+- Right-click context menu support
+- Keyboard shortcut support (Alt+Shift+N)
+- Options to configure behavior
 
+## Installation for Development
 
-## How to build
+1. Clone this repository
+2. Run `npm install && npm run prepare` to copy locale and icon files
+3. Open Chrome and navigate to `chrome://extensions/`
+4. Enable "Developer mode"
+5. Click "Load unpacked" and select this directory
+
+## Project Structure
 
 ```
-yarn install
-yarn run build
+manifest.json       # Manifest V3 configuration
+background.js       # Background service worker
+options.html        # Options page
+options.js          # Options page script
+_locales/           # Internationalization files
+icons/              # Extension icons
 ```
 
-then exntension package is created in build directory.
+## Version 2.0 Changes
+
+- Migrated to Manifest V3
+- Removed complex build system (Webpack, TypeScript)
+- Simplified codebase for easier maintenance
+- Chrome-focused (removed Firefox-specific code)
+./build.sh
